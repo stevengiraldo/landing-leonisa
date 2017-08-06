@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Leonisa | En navidad todo es color alegría</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="postal-page">
+  <div id="inicio" class="cover">
+    <header>
+      <div class="container header">
+        <figure class="logo"><a data-scroll href="../#inicio"><img src="img/leonisa.png" alt="Leonisa" height="40" /></a></figure>
+        <span id="menu-button" class="menu-button icon icon-menu"></span>
+        <nav>
+          <ul id="menu" class="menu">
+            <li><a data-scroll href="../#coleccion">colección</a></li>
+            <li><a data-scroll href="#">crea tu postal</a></li>
+            <li><a data-scroll href="../#comparte-color">comparte el color</a></li>
+            <li><a data-scroll href="../#color-navidad">el color en navidad</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </div>
+  <section class="container-postal">
+    <p>Hola <span id="destinatario" class="destinatario">Camila</span></p>
+    <p><span id="remitente" class="remitente">Felipe Hincapie</span> quiso compartir el color de la navidad contigo y te envío esta postal.</p>
+    <div class="postal"><img src="img/postal.jpg" alt="Postal"></div>
+    <form action="#">
+      <label for="mensaje">Escribe tu mensaje navideño</label>
+      <textarea id="mensaje" name="mensaje" rows="8" cols="40"></textarea>
+      <input type="submit" value="enviar" />
+    </form>
+    <p class="texto-compartir">Comparte o descarga tu postal navideña aquí</p>
+    <nav>
+      <ul class="botones-compartir">
+        <li><a href="#"><span class="icon icon-facebook"></span></a></li>
+        <li><a href="#"><span class="icon icon-email"></span></a></li>
+        <li><a href="#"><span class="icon icon-download"></span></a></li>
+      </ul>
+    </nav>
+  </section>
+  <footer>
+    <div class="footer-container">
+      <div class="redes">
+        <p>conéctate con Leonisa</p>
+        <nav>
+          <ul>
+            <li><a href="#" target="_blank"><span class="icon icon-facebook"></span></a></li>
+            <li><a href="#" target="_blank"><span class="icon icon-twitter"></span></a></li>
+            <li><a href="#" target="_blank"><span class="icon icon-youtube"></span></a></li>
+            <li><a href="#" target="_blank"><span class="icon icon-pinterest"></span></a></li>
+            <li><a href="#" target="_blank"><span class="icon icon-instagram"></span></a></li>
+            <li><a href="#" target="_blank"><span class="icon-pink"></span></a></li>
+            <li><a href="#" target="_blank"><span class="icon-blog">blog</span></a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container">
+        <p class="copyright">
+          © 2016 COMPAÑIA DE COSMÉTICOS VOTRE PASSION. S.A.S.
+          <a href="#">Políticas de privacidad</a> |
+          <a href="#">Condiciones de uso</a> |
+          <a href="#">Mapa del Sitio</a> |
+          Superintendencia de Industria y Comercio
+        </p>
+        <p class="contacto">Nit: 800100159-3 | Dirección: Carrera 48 Nº 37 -27, Medellín - Antioquia, Colombia | Línea de atención al cliente: 01 8000 52 1234 - 01 8000 94 1234</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script>
+    var $menuButton = $('#menu-button');
+    var $menu = $('#menu');
+    $menuButton.on('touchstart', function() {
+      $menu.toggleClass('active');
+      $menuButton.toggleClass('icon-close');
+    });
+  </script>
+
+</body>
+</html>
